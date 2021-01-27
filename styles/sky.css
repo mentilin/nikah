@@ -1,6 +1,6 @@
 .sky {
   background: radial-gradient(
-    farthest-corner at 80px 80px,
+    ellipse at center,
     #1583b8 0%,
     #1c64a6 35%,
     #252f84 100%
@@ -8,6 +8,18 @@
   width: 100%;
   height: 100%;
   z-index: 0;
+}
+
+.header {
+  background: url(../assets/header.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 60%;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .star {
@@ -24,14 +36,14 @@
   background: url(../assets/moon.png) no-repeat;
   background-size: contain;
   position: absolute;
-  top: 1%;
+  top: 2%;
   left: 16%;
-  width: 350px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
   z-index: 0;
 }
 
-.cloud-1 {
+.cloud-big {
   background: url(../assets/cloud.png) no-repeat;
   background-size: contain;
   position: absolute;
@@ -42,24 +54,24 @@
   z-index: 1;
 }
 
-.cloud-2 {
+.cloud-small {
   background: url(../assets/cloud.png) no-repeat;
   background-size: contain;
   position: absolute;
-  top: 2%;
-  right: 20%;
+  top: 5%;
+  left: 2%;
   width: 200px;
   height: 200px;
   z-index: 1;
 }
 
-.cloud-3 {
-  background: url(../assets/cloud.png) no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 8%;
-  right: 50%;
-  width: 200px;
-  height: 200px;
-  z-index: 1;
+@media only screen and (max-width: 1080px) {
+  .header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 300px;
+    transform: translate(-50%, -50%);
+  }
 }

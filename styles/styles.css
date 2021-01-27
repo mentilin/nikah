@@ -22,3 +22,9 @@ body {
   height: 100vh;
   background: linear-gradient(#3eafd6, #00687f, #05346b);
 }
+
+@media only screen and (max-width: 1080px) {
+  .visual {
+    height: 1200px;
+  }
+}

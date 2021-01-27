@@ -44,11 +44,11 @@
 .boat {
   background: url(../assets/boat.svg) no-repeat;
   position: absolute;
-  bottom: -20px;
+  bottom: 2%;
   left: 50%;
-  width: 800px;
-  height: 500px;
-  animation: boatswell 7s ease -1.25s infinite;
+  width: 700px;
+  height: 400px;
+  animation: boatswell 7s ease -0.45s infinite;
   z-index: 2;
 }
 
@@ -84,9 +84,9 @@
 @keyframes boatswell {
   0%,
   100% {
-    transform: translate3d(-50%, -40px, 0) rotate(-7deg);
+    transform: translate3d(-50%, -5%, 0) rotate(-7deg);
   }
   50% {
-    transform: translate3d(-50%, 40px, 0) rotate(7deg);
+    transform: translate3d(-50%, 15%, 0) rotate(7deg);
   }
 }
