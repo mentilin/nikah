@@ -42,9 +42,9 @@
 }
 
 .boat {
-  background: url(../assets/boat.svg) no-repeat;
+  background: url(../assets/otok.png) no-repeat;
   position: absolute;
-  bottom: -30px;
+  bottom: 0px;
   left: 50%;
   width: 800px;
   height: 500px;
