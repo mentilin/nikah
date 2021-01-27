@@ -1,0 +1,92 @@
+.ocean {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.wave-back {
+  background: url(../assets/wave-back.svg) repeat-x;
+  position: absolute;
+  bottom: 60px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite,
+    swell 7s ease -1.25s infinite;
+  transform: translate3d(0, 0, 0);
+  z-index: 1;
+}
+
+.wave-middle {
+  background: url(../assets/wave-center.svg) repeat-x;
+  position: absolute;
+  bottom: 30px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.225s infinite,
+    swellcenter 7s ease -2.25s infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  z-index: 3;
+}
+
+.wave-front {
+  background: url(../assets/wave-front.svg) repeat-x;
+  position: absolute;
+  bottom: 0;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  z-index: 4;
+}
+
+.boat {
+  background: url(../assets/boat.svg) no-repeat;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 800px;
+  height: 500px;
+  animation: boatswell 7s ease -1.25s infinite;
+  z-index: 2;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, 25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes swellcenter {
+  0%,
+  100% {
+    transform: translate3d(0, 15px, 0);
+  }
+  50% {
+    transform: translate3d(0, -5px, 0);
+  }
+}
+
+@keyframes boatswell {
+  0%,
+  100% {
+    transform: translate3d(-50%, -40px, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate3d(-50%, 40px, 0) rotate(7deg);
+  }
+}
