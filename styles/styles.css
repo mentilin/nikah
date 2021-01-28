@@ -8,6 +8,11 @@
   src: url(../fonts/PaperCutout.ttf);
 }
 
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand.ttf);
+}
+
 html,
 body {
   margin: 0;
@@ -22,6 +27,7 @@ body {
 .visual {
   position: relative;
   height: 60vh;
+  min-height: 730px;
   background: radial-gradient(
     ellipse at center,
     #1583b8 0%,
@@ -67,6 +73,7 @@ body {
 @media (min-width: 1080px) {
   .visual {
     height: calc(100vh - 10vh);
+    min-height: 730px;
   }
   .header-small {
     font-size: 120px;

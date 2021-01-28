@@ -81,12 +81,29 @@
   top: -200px;
   display: flex;
   flex-direction: column;
+  color: white;
+  align-items: center;
+  font-family: Quicksand;
+}
+
+.event-title {
+  font-family: BillionDreams;
+  font-size: 80px;
 }
 
 .event-date {
-  font-family: PaperCutout;
-  color: white;
   font-size: 60px;
+}
+
+.event-time {
+  font-size: 40px;
+}
+
+#map {
+  width: 90%;
+  max-width: 720px;
+  height: 400px;
+  border-radius: 20px;
 }
 
 .bottom-whale {

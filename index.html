@@ -1,6 +1,36 @@
 <html>
   <head>
     <title>The Weeding of Taufik & Ratih</title>
+
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz8AsrAuLax47DNitdEuHjYGFD98FZJBA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+
+    <script type="text/javascript">
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: -34.397, lng: 150.644 },
+          zoom: 8,
+        });
+      }
+    </script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
     <link rel="icon" href="assets/boat.svg" type="image/gif" sizes="16x16" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/sky.css" />
@@ -39,14 +69,22 @@
           <div class="aboot"></div>
         </div>
         <div class="event-info">
-          <span class="event-date">Minggu, 28 Februari 2021</span>
+          <div class="event-title">Resepsi</div>
+          <span style="font-size: 60px">Minggu, 28 Februari 2021</span>
+          <span style="font-size: 40px">Pukul: 13:00 s/d 14:30 WIB</span>
+          <span style="font-size: 40px"
+            >Bertempat di <b>ARTiVATOR</b> Cafe</span
+          >
         </div>
+        <div id="map"></div>
 
-        <div style="height: 1300px"></div>
+        <!-- <div style="height: 1300px"></div> -->
         <div class="bottom-whale">
           <img src="assets/bottom-whale.svg" />
         </div>
       </div>
     </div>
+
+    <script src="map.js"></script>
   </body>
 </html>

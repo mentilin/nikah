@@ -90,6 +90,6 @@
     transform: translate3d(-50%, 5%, 0) rotate(-7deg);
   }
   50% {
-    transform: translate3d(-50%, -25%, 0) rotate(7deg);
+    transform: translate3d(-50%, -15%, 0) rotate(7deg);
   }
 }

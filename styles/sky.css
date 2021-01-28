@@ -5,6 +5,8 @@
   height: 100%;
   z-index: 0;
   background: url(../assets/stars.png) no-repeat;
+  background-size: cover;
+  background-position: center ;
 }
 
 .star {
