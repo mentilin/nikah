@@ -1,43 +1,36 @@
 .sky {
-  background: radial-gradient(
-    ellipse at center,
-    #1583b8 0%,
-    #1c64a6 35%,
-    #252f84 100%
-  );
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: 0;
-}
-
-.header {
-  background: url(../assets/header.png) no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  width: 60%;
-  height: 300px;
-  transform: translate(-50%, -50%);
-  z-index: 100;
+  background: url(../assets/stars.png) no-repeat;
 }
 
 .star {
   width: 100%;
   background: url(../assets/stars.png) no-repeat;
-  /* z-index: 100; */
-  object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.cloud-small {
+  background: url(../assets/cloud.png) no-repeat;
+  background-size: contain;
   position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
 }
 
 .moon {
   background: url(../assets/moon.png) no-repeat;
   background-size: contain;
   position: absolute;
-  top: 2%;
-  left: 16%;
+  top: 5%;
+  left: 26%;
   width: 200px;
   height: 200px;
   z-index: 0;
@@ -54,24 +47,5 @@
   z-index: 1;
 }
 
-.cloud-small {
-  background: url(../assets/cloud.png) no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 5%;
-  left: 2%;
-  width: 200px;
-  height: 200px;
-  z-index: 1;
-}
-
 @media only screen and (max-width: 1080px) {
-  .header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 300px;
-    transform: translate(-50%, -50%);
-  }
 }

@@ -1,0 +1,90 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#3eafd6, #00687f, #05346b);
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: PaperCutout;
+  color: white;
+  font-size: 60px;
+
+  animation: scrolldown 2s ease -0.45s infinite;
+  z-index: 100;
+}
+
+@keyframes scrolldown {
+  0%,
+  100% {
+    transform: translate3d(0, 15%, 0);
+  }
+  50% {
+    transform: translate3d(0, -30%, 0);
+  }
+}
+
+.diver {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  max-width: 1000px;
+}
+
+.aboot {
+  background: url(../assets/aboot-diver.svg) no-repeat;
+  position: absolute;
+  top: -100px;
+  right: 10%;
+  width: 400px;
+  height: 400px;
+  animation: abootmove 7s ease -0.45s infinite;
+}
+
+@keyframes abootmove {
+  0%,
+  100% {
+    transform: translate3d(-10%, 0, 0);
+  }
+  50% {
+    transform: translate3d(10%, 0, 0);
+  }
+}
+
+.ratih {
+  background: url(../assets/ratih-diver.svg) no-repeat;
+  position: absolute;
+  bottom: 100px;
+  left: 10%;
+  width: 400px;
+  height: 400px;
+  animation: ratihmove 7s ease -0.45s infinite;
+}
+
+@keyframes ratihmove {
+  0%,
+  100% {
+    transform: translate3d(10%, 0, 0);
+  }
+  50% {
+    transform: translate3d(-10%, 0, 0);
+  }
+}
+
+.event-info {
+  position: relative;
+  top: -200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-date {
+  font-family: PaperCutout;
+  color: white;
+  font-size: 60px;
+}
