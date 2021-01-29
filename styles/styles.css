@@ -54,11 +54,23 @@ body {
 
   text-align: center;
   color: white;
-  text-shadow: 2px 2px 2px #333333;
+  /* text-shadow: 2px 2px 2px #333333; */
+
+  animation: textshadow 2s ease -0.45s infinite;
 
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+}
+
+@keyframes textshadow {
+  0%,
+  100% {
+    text-shadow: 8px 8px 8px #333333;
+  }
+  50% {
+    text-shadow: 2px 2px 2px #333333;
+  }
 }
 
 .header-small {
