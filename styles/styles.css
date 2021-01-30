@@ -13,6 +13,11 @@
   src: url(../fonts/Quicksand.ttf);
 }
 
+@font-face {
+  font-family: GrandAmoura;
+  src: url(../fonts/GrandAmoura.ttf);
+}
+
 html,
 body {
   margin: 0;

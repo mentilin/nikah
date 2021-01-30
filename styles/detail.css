@@ -84,9 +84,11 @@
 }
 
 .wedding {
-  display: flex;
-  flex-direction: row;
+  position: relative;
   margin-bottom: 24px;
+  width: 80%;
+  max-width: 800px;
+  height: 400px;
 }
 
 .name-wrapper {
@@ -109,15 +111,27 @@
   text-shadow: 2px 2px 2px #333333;
 }
 
-.taufik-name {
-  margin-top: 160px;
-}
-
 .and {
-  font-family: BillionDreams;
-  font-size: 200px;
+  font-family: GrandAmoura;
+  font-size: 550px;
   color: #7fc973;
   text-shadow: 4px 4px 4px #333333;
+  position: absolute;
+  left: 50%;
+  top: -33%;
+  transform: translateX(-50%);
+}
+
+.name-aboot {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.name-ratih {
+  position: absolute;
+  right: 44px;
+  bottom: 0;
 }
 
 .event-info {
