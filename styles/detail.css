@@ -158,20 +158,6 @@
   border-radius: 20px;
 }
 
-.card-contact {
-  width: 90%;
-  max-width: 720px;
-  display: flex;
-  flex-direction: column;
-  /* padding: 24px; */
-  border-radius: 20px;
-  background-color: white;
-  color: black;
-  font-family: Quicksand;
-
-  box-shadow: 2px 2px 2px #333333;
-}
-
 .card-title {
   font-weight: 700;
   font-size: 40px;
@@ -179,28 +165,36 @@
   padding: 0 24px;
 }
 
+.card-contact {
+  width: 90%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* padding: 24px; */
+  border-radius: 20px;
+}
+
 .contact {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   font-size: 30px;
   padding: 12px 24px;
 }
 
-.contact-name {
-  font-size: 30px;
+.contact-name a {
+  font-size: 36px;
+  color: white;
+  text-decoration: none;
+  font-family: Quicksand;
 }
 
 .contact-icon {
   display: flex;
-  flex-direction: row;
-}
-
-.button-icon {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
+  width: 42px;
+  height: 42px;
+  margin-right: 16px;
 }
 
 .bottom-whale {
