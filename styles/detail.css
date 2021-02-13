@@ -29,15 +29,187 @@
   }
 }
 
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1080px;
+}
+
+.content-text {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: Quicksand;
+  margin-bottom: 60px;
+}
+
+.content-text span {
+  text-align: center;
+}
+
+.wedding {
+  position: relative;
+  margin-bottom: 24px;
+  width: 100%;
+  height: 400px;
+}
+
+.name-wrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  align-items: center;
+  animation: textshadow 2s ease -0.45s infinite;
+}
+
+.firstname {
+  font-family: BillionDreams;
+  font-size: 200px;
+  text-shadow: 4px 4px 4px #333333;
+  animation: textshadow 2s ease -0.45s infinite;
+}
+
+.lastname {
+  font-family: Quicksand;
+  font-size: 40px;
+  letter-spacing: 4;
+  text-shadow: 2px 2px 2px #333333;
+  animation: textshadow 2s ease -0.45s infinite;
+}
+
+.and {
+  font-family: GrandAmoura;
+  font-size: 550px;
+  color: #7fc973;
+  text-shadow: 4px 4px 4px #333333;
+  position: absolute;
+  left: 50%;
+  top: -33%;
+  transform: translateX(-50%);
+  animation: textshadow 2s ease -0.45s infinite;
+}
+
+.name-aboot {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.name-ratih {
+  position: absolute;
+  right: 44px;
+  bottom: 0;
+}
+
+@keyframes textshadow {
+  0%,
+  100% {
+    text-shadow: 8px 8px 8px #333333;
+  }
+  50% {
+    text-shadow: 2px 2px 2px #333333;
+  }
+}
+
+.event-date {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  font-family: Quicksand;
+  text-align: center;
+}
+
+.date-week {
+  margin-top: 20px;
+  font-family: Quicksand;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+.date-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.vertical-line {
+  width: 4px;
+  background-color: white;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+.row-month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-family: Quicksand;
+  font-size: 60px;
+}
+
+.row-date {
+  display: flex;
+  justify-content: center;
+  font-family: Quicksand;
+  font-size: 100px;
+  font-weight: bold;
+  padding: 0 30px;
+}
+
+.row-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-family: Quicksand;
+  font-size: 40px;
+}
+
+.date-cotent {
+  display: flex;
+}
+
+.location-title {
+  margin-top: 64px;
+  font-family: Quicksand;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#map {
+  width: 90%;
+  max-width: 720px;
+  height: 400px;
+  border-radius: 20px;
+}
+
 .diver {
+  margin-top: 20px;
   position: relative;
   width: 100%;
   height: 500px;
-  max-width: 1000px;
 }
 
 .aboot {
   background: url(../assets/aboot-diver.svg) no-repeat;
+  fill: #000;
   position: absolute;
   top: -100px;
   right: 10%;
@@ -74,88 +246,6 @@
   50% {
     transform: translate3d(-10%, 0, 0);
   }
-}
-
-.wedding-header {
-  margin-top: -120px;
-  font-family: Quicksand;
-  font-size: 60px;
-  margin-bottom: 24px;
-}
-
-.wedding {
-  position: relative;
-  margin-bottom: 24px;
-  width: 80%;
-  max-width: 800px;
-  height: 400px;
-}
-
-.name-wrapper {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-  align-items: center;
-}
-
-.firstname {
-  font-family: BillionDreams;
-  font-size: 160px;
-  text-shadow: 4px 4px 4px #333333;
-}
-
-.lastname {
-  font-family: Quicksand;
-  font-size: 40px;
-  letter-spacing: 4;
-  text-shadow: 2px 2px 2px #333333;
-}
-
-.and {
-  font-family: GrandAmoura;
-  font-size: 550px;
-  color: #7fc973;
-  text-shadow: 4px 4px 4px #333333;
-  position: absolute;
-  left: 50%;
-  top: -33%;
-  transform: translateX(-50%);
-}
-
-.name-aboot {
-  position: absolute;
-  top: 0;
-  left: 20px;
-}
-
-.name-ratih {
-  position: absolute;
-  right: 44px;
-  bottom: 0;
-}
-
-.event-info {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  align-items: center;
-  font-family: Quicksand;
-  font-size: 40px;
-  margin-bottom: 24px;
-}
-
-.event-title {
-  margin-top: 64px;
-  font-family: Quicksand;
-  font-size: 80px;
-  font-weight: 700;
-}
-
-#map {
-  width: 90%;
-  max-width: 720px;
-  height: 400px;
-  border-radius: 20px;
 }
 
 .card-title {
