@@ -97,14 +97,14 @@
 
 .name-aboot {
   position: absolute;
-  top: 0;
-  left: 20px;
+  right: 44px;
+  bottom: 0;
 }
 
 .name-ratih {
   position: absolute;
-  right: 44px;
-  bottom: 0;
+  top: 0;
+  left: 20px;
 }
 
 @keyframes textshadow {
